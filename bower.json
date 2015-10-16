@@ -1,0 +1,21 @@
+{
+  "name": "luxuryapartment",
+  "description": "luxuryapartment dev test frontend develop",
+  "main": "",
+  "moduleType": [],
+  "authors": [
+    "Denny Puig"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "3.3.5"
+  }
+}
