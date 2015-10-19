@@ -3,6 +3,7 @@
  */
 
 'use strict';
+
 module.exports = function (grunt) {
 
     // Load grunt tasks automatically
@@ -10,6 +11,8 @@ module.exports = function (grunt) {
 
     // Show grunt task time
     require('time-grunt')(grunt);
+
+
 
     // Configurable paths for the app
     var appConfig = {
@@ -33,16 +36,8 @@ module.exports = function (grunt) {
             livereload: {
                 options: {
                     open: true,
-                    middleware: function (connect) {
-                        return [
-                            connect.static('.tmp'),
-                            connect().use(
-                                '/bower_components',
-                                connect.static('./bower_components')
-                            ),
-                            connect.static(appConfig.app)
-                        ];
-                    }
+                    livereload:true
+
                 }
             },
             dist: {
