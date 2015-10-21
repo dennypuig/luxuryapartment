@@ -12,8 +12,6 @@ module.exports = function (grunt) {
     // Show grunt task time
     require('time-grunt')(grunt);
 
-
-
     // Configurable paths for the app
     var appConfig = {
         app: 'app',

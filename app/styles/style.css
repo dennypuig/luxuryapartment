@@ -59,7 +59,7 @@
 }
 
 .navbar-default .navbar-nav > li > a {
-    margin-top: 25px;
+    margin-top: 10px;
 }
 
 /*END SHAME*/
@@ -399,7 +399,7 @@ div#geo-media-content {
 
 #geo-icon {
     background: #e9a92f;
-    padding: 127px;
+    padding: 129px;
     text-align: center;
 }
 
@@ -486,6 +486,10 @@ div#social-icons {
     opacity: 0 !important;
 }
 
+.icon-footer-margin{
+    margin-left: 10px;
+}
+
 /*ANIM*/
 #left-amenities-content {
     -vendor-animation-delay: 3s;
@@ -495,8 +499,11 @@ div#social-icons {
 /* Large desktop */
 @media (min-width: 1260px) {
     .tp-caption.News-Title {
-        transform: translateX(-600px) !important;
+        /*transform: translateX(-600px) !important;*/
+        position: absolute;
+        left: -300px;
     }
+
 
     .tp-bullets {
         left: 5% !important;

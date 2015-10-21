@@ -17,12 +17,13 @@
     <link rel="stylesheet" href="../bower_components/animate.css/animate.css"/>
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css"/>
     <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css"/>
-    <!-- endbower -->
-    <!-- endbuild -->
     <link rel="stylesheet" type="text/css" href="library/revolution/css/settings.css"/>
     <link rel="stylesheet" type="text/css" href="library/revolution/css/layers.css"/>
     <link rel="stylesheet" type="text/css" href="library/revolution/css/navigation.css"/>
     <link rel="stylesheet" type="text/css" href="styles/style.css"/>
+    <!-- endbower -->
+    <!-- endbuild -->
+
 
 </head>
 <body>
@@ -30,7 +31,7 @@
     <nav id="top-nav" class="navbar navbar-default">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-xs-2 col-md-3">
+                <div class="col-xs-2 col-md-4">
                     <ul class="nav navbar-nav">
                         <li>
                             <a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle">
@@ -66,11 +67,11 @@
                         <li><a href="#" class="menu-item text-uppercase hidden-xs hidden-sm">CALL 888.555.5555</a></li>
                     </ul>
                 </div>
-                <div class="col-xs-10 col-md-6">
+                <div class="col-xs-10 col-md-4">
                     <img id="logo" src="images/logo.png" class="img-responsive">
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <ul class="nav navbar-nav pull-right">
                         <li>
                             <a href="#" class="menu-item text-uppercase hidden-xs hidden-sm ">RESIDENTS</a>
@@ -201,7 +202,7 @@
 
         </div>
         <div class="col-md-4  bkg-form">
-            <div id="form-contact" class="row scrolinganim" animclass="rollin">
+            <div id="form-contact" class="row scrolinganim" animclass="fadeIn">
                 <form>
                     <div class="col-xs-12 col-sm-12 col-md-6">
                         <input type="text" class="form-control input-xlg text-uppercase" placeholder="FIRST NAME">
@@ -236,7 +237,7 @@
 
 <section id="map" class="container-fluid scrolinganim hidden-sm hidden-xs" animclass="fadeIn"></section>
 <section class="container hidden-sm hidden-xs">
-    <div id="map-content" class="row">
+    <div id="map-content" class="row scrolinganim" animclass="bounce">
         <div id="geo-media-content" class="col-md-4 col-md-offset-1">
             <div id="geo-icon"><i class="fa fa-5x fa-map-marker"></i></div>
         </div>
@@ -251,7 +252,7 @@
     </div>
 </section>
 
-<section id="contact" class="scrolinganim container-fluid bkg-black" animclass="fadeInRight">
+<section id="contact" class="scrolinganim container-fluid bkg-black" animclass="fadeIn">
     <div id="contact-data" class="row">
         <div class="col-md-12 text-uppercase"><h3>Contact Us</h3></div>
         <div class="col-md-12 text-uppercase"><p>P: 855.555.5555</p></div>
@@ -274,10 +275,9 @@
         </div>
         <div class="col-md-4 ">
             <div class="pull-right">
-                <i class="fa fa-2x fa-paw"></i>PET FRIENDLY
-                <i class="fa fa-2x fa-wheelchair"></i>
-                <i class="fa fa-2x fa-home"></i>
-
+                <span><i class="fa fa-2x fa-paw"></i>PET FRIENDLY</span>
+                <small class="icon-footer-margin"><i class="fa fa-2x fa-wheelchair"></i></small>
+                <small class="icon-footer-margin"><i class="fa fa-2x fa-home"></i></small>
             </div>
         </div>
         <div class="col-md-2 ">
@@ -292,12 +292,11 @@
 <!-- build:js(.) scripts/vendor.js -->
 <script src="../bower_components/jquery/dist/jquery.min.js"></script>
 <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-
 <script type="text/javascript" src="library/revolution/js/jquery.themepunch.tools.min.js?rev=5.0"></script>
 <script type="text/javascript" src="library/revolution/js/jquery.themepunch.revolution.min.js?rev=5.0"></script>
+<script type="text/javascript" src="scripts/app.js"></script>
 <!-- endbuild -->
 
-<script type="text/javascript" src="scripts/app.js"></script>
 
 <script type="text/javascript">
     var revapi;

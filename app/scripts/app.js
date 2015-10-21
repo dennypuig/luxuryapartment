@@ -15,7 +15,7 @@ jQuery(document).ready(function (ev) {
             var currentPosition = jQuery(window).scrollTop();
             var windowHeight = jQuery(window).outerHeight();
             for (var i = 0; i < jQuery.elementsToAnimate.length; i++) {
-                if (jQuery.elementsToAnimate[i].top < currentPosition + (windowHeight / 1.2) +1) {
+                if (jQuery.elementsToAnimate[i].top < currentPosition + (windowHeight / 10)) {
                     var element = jQuery.elementsToAnimate[i].el;
                     jQuery(element).addClass("animated " + jQuery.elementsToAnimate[i].cls);
                 }
@@ -24,7 +24,6 @@ jQuery(document).ready(function (ev) {
             // jQuery.elementsToAnimate = [];
         }
     });
-
 
     $('a[href*=#]:not([href=#])').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
