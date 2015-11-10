@@ -1,0 +1,38 @@
+/*SHAME FILE*/
+.News-Title, .text-luxury-border {
+    font-family: ProximaNovaThin !important;
+}
+
+.tparrows {
+    background: none !important;
+}
+
+.tparrows:before {
+    font-size: 50px;
+}
+
+.tp-caption:before {
+    border: 1px solid red;
+    width: 50%;
+}
+
+.no-opacity {
+    opacity: 0 !important;
+}
+
+/*MEDIA*/
+/* Large desktop */
+@media (min-width: 1260px) {
+    .tp-caption.News-Title {
+        font-size: 60px;
+        left: -250px;
+        position: absolute;
+        text-align: center;
+        width: 500px;
+
+    }
+
+    .tp-bullets {
+        left: 5% !important;
+    }
+}

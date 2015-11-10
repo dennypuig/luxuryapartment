@@ -35,7 +35,6 @@ module.exports = function (grunt) {
                 options: {
                     open: true,
                     livereload:true
-
                 }
             },
             dist: {
@@ -116,7 +115,6 @@ module.exports = function (grunt) {
                             '*.{ico,png,txt}',
                             '.htaccess',
                             '*.html',
-                            'views/{,*/}*.html',
                             'styles/img/*.*',
                             'images/{,*/}*.*'
                         ]
@@ -160,7 +158,7 @@ module.exports = function (grunt) {
                 files: [{
                     expand: true,
                     cwd: '<%= homer.dist %>',
-                    src: ['*.html', 'views/{,*/}*.html'],
+                    src: ['*.html', '/{,*/}*.html'],
                     dest: '<%= homer.dist %>'
                 }]
             }
