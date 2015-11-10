@@ -19,9 +19,7 @@ atlassian-ide-plugin.xml
 
 #Grunt
 node_modules
-dist
 .tmp
 .sass-cache
 
 #Bower
-bower_components
